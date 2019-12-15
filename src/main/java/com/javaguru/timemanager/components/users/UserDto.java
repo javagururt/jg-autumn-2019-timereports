@@ -1,9 +1,10 @@
-package com.javaguru.timemanager.users;
+package com.javaguru.timemanager.components.users;
 
-class UserDto {
+public class UserDto {
 
     private Long id;
     private String name;
+    private Integer version;
 
     public Long getId() {
         return id;
@@ -19,5 +20,13 @@ class UserDto {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
     }
 }
